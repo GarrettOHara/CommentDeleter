@@ -1,0 +1,41 @@
+package spontaneousProjects;
+import java.util.*;
+public class recursiveArray
+{
+    public static ArrayList<Integer> original = new ArrayList<Integer>();
+    public static void main(String[] args)
+    {
+        int i = 1;
+        recursion(original, i);
+    }
+    public static ArrayList<Integer> recursion(ArrayList<Integer> original, int i)
+    {
+        ArrayList<Integer> odd = new ArrayList<Integer>();
+        if (original == null || original.size() == 0 || original.size() == 1 
+                || original.size() == i)
+        {
+            return odd;
+        }
+        else
+        {
+            odd.add(i);
+            i = i + 2;
+            recursion(original, i);
+        }
+        return odd;
+    }
+    //remove this
+    //and this
+    //and also this
+    
+      
+    /*
+     * and you should also remove what's in...
+     * 
+     * 
+     * 
+     * 
+     * ... here
+     */
+}
+
